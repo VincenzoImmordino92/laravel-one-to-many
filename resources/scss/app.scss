@@ -1,0 +1,52 @@
+@import '~bootstrap/scss/bootstrap';
+
+header{
+    height: 60px;
+}
+.main-wrapper {
+    height: calc(100vh - 60px);
+    .form-hidden{
+        width: 100%;
+        border: none;
+        &:focus{
+            border:none;
+            outline: none;
+        }
+    }
+}
+
+
+.ck-editor__editable[role="textbox"] {
+    /* editing area */
+    min-height: 400px;
+}
+
+aside {
+    width: 250px;
+    height: 100%;
+    ul {
+        list-style: none;
+        padding-left: 0px;
+        li{
+            a {
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                width: 100%;
+                display: inline-block;
+                padding: 10px;
+                &.active{
+                    background-color: white;
+                    color: black;
+                }
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+            i{
+                margin: 10px 5px 5px 0px;
+            }
+
+
+        }
+    }
+}
